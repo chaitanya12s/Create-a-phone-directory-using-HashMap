@@ -1,0 +1,40 @@
+Name-Chaitanya shinde
+Roll no-53
+
+problem statement:- Create a phone directory using HashMap.
+
+CODE:-
+
+package com.sanjivani;
+
+import java.util.HashMap;
+
+public class PhoneDirectory {
+
+    public static void main(String[] args) {
+
+        HashMap<String, String> phoneBook = new HashMap<>();
+
+       
+        phoneBook.put("Ram", "9876543210");
+        phoneBook.put("Sham", "9876543211");
+        phoneBook.put("Amit", "9876543212");
+        phoneBook.put("Raj", "9876543213");
+
+        
+        System.out.println("Phone Directory:");
+
+        for (String name : phoneBook.keySet()) {
+            System.out.println(name + " : " + phoneBook.get(name));
+        }
+    }
+}
+
+
+OUTPUT:-
+
+Phone Directory:
+Sham : 9876543211
+Amit : 9876543212
+Raj : 9876543213
+Ram : 9876543210
